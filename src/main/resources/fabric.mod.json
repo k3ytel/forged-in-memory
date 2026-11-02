@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "forged-in-memory",
+	"version": "${version}",
+	"name": "Forged in Memory",
+	"description": "Every tool, weapon and armor piece gets a life story. Tracks everything it ever did (blocks mined by type, kills by mob, damage absorbed, repairs, renames, enchantments...), writes an obituary when it dies, and shows all your gear in a pannable family tree connected by where its materials came from, who replaced whom and anvil merges.",
+	"authors": [
+		"k3ytel"
+	],
+	"contact": {
+		"homepage": "https://github.com/k3ytel/forged-in-memory",
+		"sources": "https://github.com/k3ytel/forged-in-memory",
+		"issues": "https://github.com/k3ytel/forged-in-memory/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/forged-in-memory/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.k3ytel.forgedinmemory.ForgedInMemory"
+		],
+		"client": [
+			"dev.k3ytel.forgedinmemory.client.ForgedInMemoryClient"
+		]
+	},
+	"mixins": [
+		"forged-in-memory.mixins.json",
+		{
+			"config": "forged-in-memory.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	},
+	"recommends": {
+		"yet_another_config_lib_v3": ">=3.9.7"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

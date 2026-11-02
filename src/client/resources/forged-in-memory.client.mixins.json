@@ -2,7 +2,9 @@
 	"required": true,
 	"package": "dev.k3ytel.forgedinmemory.client.mixin",
 	"compatibilityLevel": "JAVA_25",
-	"client": [],
+	"client": [
+		"ContainerScreenAccessor"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},

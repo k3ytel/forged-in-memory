@@ -21,6 +21,9 @@
 		],
 		"client": [
 			"dev.k3ytel.forgedinmemory.client.ForgedInMemoryClient"
+		],
+		"modmenu": [
+			"dev.k3ytel.forgedinmemory.client.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [

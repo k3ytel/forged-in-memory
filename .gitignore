@@ -41,3 +41,9 @@ replay_*.log
 
 # Claude build helper output
 build.log
+
+# 512px icon render (working file)
+icon-render.png
+
+# Release notes to copy from (not part of the mod)
+_release/

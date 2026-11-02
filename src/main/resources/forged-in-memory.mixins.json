@@ -2,7 +2,15 @@
 	"required": true,
 	"package": "dev.k3ytel.forgedinmemory.mixin",
 	"compatibilityLevel": "JAVA_25",
-	"mixins": [],
+	"mixins": [
+		"AnvilMenuMixin",
+		"EnchantmentMenuMixin",
+		"ItemCombinerMenuAccessor",
+		"ItemEntityMixin",
+		"ItemStackMixin",
+		"ResultSlotMixin",
+		"SmithingMenuMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},
